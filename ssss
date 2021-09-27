@@ -1,0 +1,17 @@
+[33mcommit b20ff523afae8a8fc659c6755696a2dda3baad77[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jack <jack0025@e.ntu.edu.sg>
+Date:   Mon Sep 27 12:39:50 2021 +0800
+
+    jack test
+
+[33mcommit 7ce9b7a4779bfc53fec8fdf7a95919bda97d91d5[m
+Author: Stanley Goh <stanleygohjunbin@gmail.com>
+Date:   Mon Sep 27 12:11:21 2021 +0800
+
+    add gitignore, package-json
+
+[33mcommit 4408f6e1684543c8e0cd3992f941265cacb109ae[m
+Author: Stanley Goh <stanleygohjunbin@gmail.com>
+Date:   Mon Sep 27 11:55:41 2021 +0800
+
+    first commit
