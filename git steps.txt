@@ -2,7 +2,7 @@ this is just a text file
 
 
 before working:
-git fetch --origin
+git fetch --all
 THEN
 git pull origin <insert specified branch>
 
