@@ -4,7 +4,7 @@ this is just a text file
 before working:
 git fetch --all
 THEN
-git pull origin <insert specified branch>
+git pull    OR      git pull origin <insert specified branch>
 
 
 when u wanna upload:
