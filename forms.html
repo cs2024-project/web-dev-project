@@ -19,7 +19,25 @@
     <title>SG Money Lenders</title>
 </head>
 
-<body>
+<body onload="myFunction()">
+    <script>
+        function myFunction() {
+            loan = localStorage.getItem("loan");
+            amount = localStorage.getItem("amount");
+            for (var i = 0; i < document.getElementById("loanId").length; i++) {
+                if (document.getElementById("loanId").options[i].value == loan) {
+                    document.getElementById("loanId").selectedIndex = i;
+                }
+            }
+            for (var i = 0; i < document.getElementById("loanamount").length; i++) {
+                if (document.getElementById("loanamount").options[i].value == amount) {
+                    document.getElementById("loanamount").selectedIndex = i;
+                }
+            }
+            localStorage.clear();
+
+        }
+    </script>
     <div id="container">
         <nav id="header" class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
@@ -42,6 +60,7 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Loans
                                 </a>
+
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="personalLoan.html">Personal</a></li>
                                     <li><a class="dropdown-item" href="#">Business</a></li>
@@ -77,40 +96,22 @@
             </div>
         </nav>
 
-        <div id=" content">
-            <table style="margin: 0 auto;" ; width=80%;>
-                <td>
-                    <img src="./Image/homeImg.jpg" alt="...">
-                </td>
-                <td class="header-1" ; style="padding-left: 30px;">
-                    Personal Loan
-                    <div class="para" ; style="padding-top: 5px; line-height: 1.5;">
-                        A personal loan is a sum of money you borrowed from a financial institution for
-                        your own needs.
-                        These can include investments or consolidate debts.<br>
-                        <br>
-                        Personal loans are offered by both banks and licensed moneylenders in Singapore.
-                        Banks would
-                        offer a lower rate for a large amount of money but, they will have a longer
-                        approval time.
-                        <br>
-                        <br>
-                        With SG Money Lender, you can receive your loans within minutes so, what are you
-                        waiting for?
-                        <br>
-                        Apply for a personal loan from SG Money Lender now!
-                        <br>
-                        <br>
-                        <button type="button" class="para-button" onclick="location.href = 'forms.html';">Apply
-                            Now</button>
-                        <tr>
-
-                        </tr>
-                    </div>
-                    <!-- SINI -->
-                    <form action="forms.html">
-                        <label for="loan">Select the type of loan: &emsp13;</label>
-                        <select id="loanType" select name="type_of_loan">
+        <div id="content">
+            <center class="header-1" ; style="padding-top: 32px;">Apply for a loan</center>
+            <center class="para" style="padding-bottom: 24px;">Fill up the form and we will contact with you shortly
+            </center>
+            <center>
+                <div style="position:relative;width:800px;height:800px">
+                    <canvas id="myCanvas" width="700" height="800"
+                        style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
+                    <form action="confirmation.html">
+                        <input type="text" style="position:absolute;left:100px;top:80px;width:500px;" class="
+                            form-control" id="name" placeholder="Enter your Name (as per NRIC)*" required>
+                        <input type="tel" style="position:absolute;left:100px;top:160px;width:500px;" id="contactno"
+                            placeholder="Enter your Contact Number (+6591234567)*" pattern="+[0-9]{10}" required>
+                        <p style="position:absolute;left:0px;top:210px;width:300px;height: 30px;">Type of Loan:</p>
+                        <select id="loanId" name="loan"
+                            style="position:absolute;left:100px;top:240px;width:500px;height: 30px;">
                             <option value="Personal Loan">Personal Loan</option>
                             <option value="Business Loan">Business Loan</option>
                             <option value="Foreigner Loan">Foreigner Loan</option>
@@ -121,20 +122,25 @@
                             <option value="Renovation Packages">Renovation Packages</option>
                             <option value="Payday Loan">Payday Loan</option>
                         </select>
-                        <br>
-                        <label for="amount">Select an amount: &emsp13;</label>
-                        <select id="amountID" name="amount">
+                        <input type="number" style="position:absolute;left:100px;top:320px;width:500px;" id="income"
+                            placeholder="Enter your Monthly Income*" required>
+                        <p style="position:absolute;left:0px;top: 370px;width:300px;height: 30px;">Loan Amount:</p>
+                        <select id="loanamount" name="amount"
+                            style="position:absolute;left:100px;top:400px;width:500px;height: 30px;">
                             <option value="Below 30,000">Below 30,000</option>
                             <option value="30,000 to 60,000">30,000 to 60,000</option>
                             <option value="60,000 and above">60,000 and above</option>
                         </select>
+                        <textarea class="form-control"
+                            style="position:absolute;left:100px;top:480px;width:500px;height: 150px;"
+                            placeholder="Enter your Messages" id="txtbox" rows="3"></textarea>
                         <br>
-                        <input type="submit" id="submitBtn" class="para-button" onclick='transfer.js'>
-                        <script type="text/javascript" src="./js/transfer.js"></script>
+                        <input type="submit" style="position:absolute;left:300px;top:650px;width:200px;"
+                            class="para-button" id="submitBtn1" onclick='applicationDetails.js'>
+                        <script type="text/javascript" src="./js/applicationDetails.js"></script>
                     </form>
-                    <!-- sini -->
-                </td>
-            </table>
+                </div>
+            </center>
 
         </div>
 

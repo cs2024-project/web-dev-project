@@ -19,7 +19,7 @@
 
 
         #content {
-            background-color: darkslategrey;
+            background-color: #f0f5f5;
             border: none;
             min-height: 200px;
             padding: 20px;
@@ -92,7 +92,12 @@
         }
 
         .para-button {
+            background-color: #852529;
+            color: #f0f5f5;
+            border: none;
+            border-radius: 15px;
             font-size: 16px;
             font-weight: 700;
             line-height: 24px;
+            padding: 10px 70px 10px 70px;
         }
