@@ -80,7 +80,30 @@
         </nav>
 
         <div id="content">
-            contents here (padding of 20px, ownself remove border in css)
+            <form action="forms.html">
+                <label for="loan">Select the type of loan: &emsp13;</label>
+                <select id="loanType" select name="type_of_loan">
+                    <option value="Personal Loan">Personal Loan</option>
+                    <option value="Business Loan">Business Loan</option>
+                    <option value="Foreigner Loan">Foreigner Loan</option>
+                    <option value="Education Loan">Education Loan</option>
+                    <option value="Medical Loan">Medical Loan</option>
+                    <option value="Wedding Loan">Wedding Loan</option>
+                    <option value="Vacation Loan">Vacation Loan</option>
+                    <option value="Renovation Packages">Renovation Packages</option>
+                    <option value="Payday Loan">Payday Loan</option>
+                </select>
+                <br>
+                <label for="amount">Select an amount: &emsp13;</label>
+                <select id="amountID" name="amount">
+                    <option value="Below 30,000">Below 30,000</option>
+                    <option value="30,000 to 60,000">30,000 to 60,000</option>
+                    <option value="60,000 and above">60,000 and above</option>
+                </select>
+                <br>
+                <input type="submit" id="submitBtn" class="para-button" onclick='transfer.js'>
+                <script type="text/javascript" src="./js/transfer.js"></script>
+            </form>
 
         </div>
 
