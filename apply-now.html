@@ -91,7 +91,7 @@
                             </li>
 
                         </ul>
-                        <button class="button-navbar" onclick="window.location.href='./forms.html'"
+                        <button class="button-navbar" onclick="window.location.href='./apply-now.html'"
                             style="margin-left: 30px;">APPLY NOW
                         </button>
 
@@ -100,22 +100,22 @@
             </div>
         </nav>
 
-        <div id="content">
-            <center class="header-1" ; style="padding-top: 32px;">Apply for a loan</center>
-            <center class="para" style="padding-bottom: 24px;">Fill up the form and we will contact with you shortly
+        <div id="content" style="padding: 20px;">
+            <center class="header-1">Apply for a loan</center>
+            <center class="header-1-caption" style="padding-bottom: 50px;"><br>Fill up the form and we will contact with you shortly
             </center>
             <center>
                 <div style="position:relative;width:800px;height:800px">
                     <canvas id="myCanvas" width="700" height="800"
                         style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
                     <form action="confirmation.html">
-                        <input type="text" style="position:absolute;left:100px;top:80px;width:500px;" class="
+                        <input type="text" style="position:absolute;left:100px;top:80px;width:600px;" class="
                             form-control" id="name" placeholder="Enter your Name (as per NRIC)*" required>
-                        <input type="tel" style="position:absolute;left:100px;top:160px;width:500px;" id="contactno"
+                        <input type="tel" style="position:absolute;left:100px;top:160px;width:600px;" id="contactno"
                             placeholder="Enter your Contact Number (91234567)*" pattern="[6,8,9]{1}[0-9]{7}" required>
                         <p style="position:absolute;left:0px;top:210px;width:300px;height: 30px;">Type of Loan:</p>
                         <select id="loanId" name="loan"
-                            style="position:absolute;left:100px;top:240px;width:500px;height: 30px;">
+                            style="position:absolute;left:100px;top:240px;width:600px;height: 30px;">
                             <option value="Personal Loan">Personal Loan</option>
                             <option value="Business Loan">Business Loan</option>
                             <option value="Foreigner Loan">Foreigner Loan</option>
@@ -126,17 +126,17 @@
                             <option value="Renovation Packages">Renovation Packages</option>
                             <option value="Payday Loan">Payday Loan</option>
                         </select>
-                        <input type="number" style="position:absolute;left:100px;top:320px;width:500px;" id="income"
+                        <input type="number" style="position:absolute;left:100px;top:320px;width:600px;" id="income"
                             placeholder="Enter your Monthly Income*" required>
                         <p style="position:absolute;left:0px;top: 370px;width:300px;height: 30px;">Loan Amount:</p>
                         <select id="loanamount" name="amount"
-                            style="position:absolute;left:100px;top:400px;width:500px;height: 30px;">
+                            style="position:absolute;left:100px;top:400px;width:600px;height: 30px;">
                             <option value="Below 30,000">Below 30,000</option>
                             <option value="30,000 to 60,000">30,000 to 60,000</option>
                             <option value="60,000 and above">60,000 and above</option>
                         </select>
                         <textarea class="form-control"
-                            style="position:absolute;left:100px;top:480px;width:500px;height: 150px;"
+                            style="position:absolute;left:100px;top:480px;width:600px;height: 150px;"
                             placeholder="Enter your Messages" id="txtbox" rows="3"></textarea>
                         <br>
                         <input type="submit" style="position:absolute;left:300px;top:650px;width:200px;"
@@ -149,7 +149,9 @@
         </div>
 
         <footer id="footer">
-            footer here with 20px vertical padding, 10% horizontal padding
+            <paragraph class="para">© 2021 SG MoneyLender Pte. Ltd. All Rights
+                Reserved.
+            </paragraph>
         </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
