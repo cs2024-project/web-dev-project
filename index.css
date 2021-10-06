@@ -223,6 +223,22 @@
             80% {
                 transform: translateY(40%);
             }
+        }
 
 
+
+        .accordion-button.collapsed {
+            color: #D8DCDC;
+            background: #258985;
+        }
+
+
+        .accordion-button:not(.collapsed) {
+            background-color: #3b3747;
+            color: #258985;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-color: #3b3747;
+            color: #258985;
         }
