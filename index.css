@@ -244,3 +244,7 @@
             background-color: #3b3747;
             color: #258985;
         }
+
+        .accordion-body {
+            text-align: left;
+        }
