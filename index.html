@@ -38,7 +38,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="clear: both;">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -73,7 +73,9 @@
                             </li>
 
                         </ul>
-                        <button class="button-navbar" style="margin-left: 30px;">APPLY NOW</button>
+                        <button class="button-navbar" onclick="window.location.href='./forms.html'"
+                            style="margin-left: 30px;">APPLY NOW
+                        </button>
 
                     </div>
                 </div>
@@ -372,8 +374,16 @@
             <!-- Call to action  -->
             <div id="cta-container">
                 <div id="cta-container-inner">
-                    <button>lol</button>
-                    <button>lol2</button>
+                    <img src="assets/logo.png">
+
+                    <div style="display:flex; justify-content:center; margin: 30px 0;">
+                        <button class="para-button" style="background-color:#d8dcdc; color:#258985"
+                            onclick="window.location.href='./contact-us.html'">CONTACT
+                            US</button>
+                        &nbsp; &nbsp;
+                        <button class="para-button" onclick="window.location.href='./forms.html'">APPLY NOW</button>
+                    </div>
+
                 </div>
             </div>
 
@@ -382,7 +392,9 @@
     </div>
 
     <footer id="footer">
-        footer here with 20px vertical padding, 10% horizontal padding
+        <paragraph class="para">© 2021 SG MoneyLender Pte. Ltd. All Rights
+            Reserved.
+        </paragraph>
     </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->

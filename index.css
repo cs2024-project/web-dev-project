@@ -29,7 +29,7 @@
             background-color: #3b3747;
             color: #f0f5f5;
             border: none;
-            min-height: 100px;
+            min-height: 50px;
             padding: 20px 10%;
         }
 
@@ -110,7 +110,7 @@
             margin-top: 30px;
             margin-bottom: 30px;
             width: 75%;
-            border: solid 1px #3b3747;
+            /* border: solid 1px #3b3747; */
             padding: 30px;
         }
 
@@ -125,8 +125,10 @@
         #cta-container-inner {
             /* to provide the side margin */
             margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
             width: 75%;
-            border: solid 1px #3b3747;
+            /* border: solid 1px #3b3747; */
         }
 
         .navbar {
