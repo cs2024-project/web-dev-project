@@ -26,15 +26,16 @@
     <div id="container">
         <nav id="header" class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
-                <img src="./assets/logo_resized.png" style="padding-bottom: 10px;" href="#">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <img src="./assets/logo_resized.png" style="padding-bottom: 10px;"
+                    onclick="window.location.href='index.html'">
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div style="float: right; margin-top: 5px;">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="clear: both;">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -46,7 +47,7 @@
                                     Loans
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Personal</a></li>
+                                    <li><a class="dropdown-item" href="personalLoan.html">Personal</a></li>
                                     <li><a class="dropdown-item" href="#">Business</a></li>
                                     <li><a class="dropdown-item" href="#">Foreigner</a></li>
                                     <li><a class="dropdown-item" href="#">Education</a></li>
@@ -79,8 +80,9 @@
             </div>
         </nav>
 
-        <div id="content" style="padding: 20px 0;">
+        <div id="content" style="padding:  0;">
 
+            <!-- carousel component -->
             <div id="carousel-container">
                 <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -115,10 +117,11 @@
                 </div>
             </div>
 
+            <!-- Why Us content -->
             <div id="why-us-container">
                 <div id="why-us-container-inner">
 
-                    <div style="padding: 30px 0;">
+                    <div style="padding: 40px 0;">
                         <paragraph class="header-3">Why Choose&nbsp;</paragraph>
                         <paragraph class="header-3" style="color: #258985">SGML&nbsp;</paragraph>
                         <img src="./assets/favicon.ico" width="27px">
@@ -190,34 +193,105 @@
                 </div>
             </div>
 
-            <div class="header-1" style="margin: 0 auto;"></div>
+            <!-- Loan types + form -->
+            <div id="loan-types-container">
+                <div id="loan-types-container-inner">
+
+                    <div style="width:50%; padding:30px; ">
+                        <div style="margin-bottom: 50px;">
+                            <paragraph class="header-3">Services available here at &nbsp;</paragraph>
+                            <paragraph class="header-3" style="color: #258985">SGML&nbsp;</paragraph>
+                            <img src="./assets/favicon.ico" width="27px">
+                        </div>
+
+                        <div class="row row-cols-3 gx-0 gy-4">
+                            <div class="col"><img height="50px" src="assets/icon_personal.png">
+                                <paragraph class="header-3-caption"><br>Personal</paragraph>
+                            </div>
+                            <div class="col"><img height="50px" src="assets/icon_business.png">
+                                <paragraph class="header-3-caption"><br>Business</paragraph>
+                            </div>
+                            <div class="col"><img height="50px" src="assets/icon_foreigner.png">
+                                <paragraph class="header-3-caption"><br>Foreigner</paragraph>
+                            </div>
+                            <div class="col"><img height="50px" src="assets/icon_education.png">
+                                <paragraph class="header-3-caption"><br>Education</paragraph>
+                            </div>
+                            <div class="col">
+                                <img height="50px" src="assets/icon_medical.png">
+                                <paragraph class="header-3-caption"><br>Medical</paragraph>
+                            </div>
+                            <div class="col">
+                                <img height="50px" src="assets/icon_wedding.png">
+                                <paragraph class="header-3-caption"><br>Wedding</paragraph>
+                            </div>
+                            <div class="col">
+                                <img height="50px" src="assets/icon_vacation.png">
+                                <paragraph class="header-3-caption"><br>Vacation</paragraph>
+                            </div>
+                            <div class="col">
+                                <img height="50px" src="assets/icon_renovation.png">
+                                <paragraph class="header-3-caption"><br>Renovation</paragraph>
+                            </div>
+                            <div class="col">
+                                <img height="50px" src="assets/icon_payday.png">
+                                <paragraph class="header-3-caption"><br>Payday</paragraph>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style=" width:50%; padding:30px; display:flex; flex-direction: column; justify-content: center;">
+                        <div
+                            style="border-radius: 20px; padding:30px;background: #d8dcdc; display:flex; flex-wrap: wrap; justify-content: center;">
+                            <img src="assets/new logo.png" style="margin-bottom: 30px;">
+                            <form style="clear: both;" action=" forms.html">
+                                <label for="loan">Select the type of loan: &emsp13;</label>
+                                <select id="loanType" select name="type_of_loan">
+                                    <option value="Personal Loan">Personal Loan</option>
+                                    <option value="Business Loan">Business Loan</option>
+                                    <option value="Foreigner Loan">Foreigner Loan</option>
+                                    <option value="Education Loan">Education Loan</option>
+                                    <option value="Medical Loan">Medical Loan</option>
+                                    <option value="Wedding Loan">Wedding Loan</option>
+                                    <option value="Vacation Loan">Vacation Loan</option>
+                                    <option value="Renovation Packages">Renovation Packages</option>
+                                    <option value="Payday Loan">Payday Loan</option>
+                                </select>
+                                <br>
+                                <label for="amount">Select an amount: &emsp13;</label>
+                                <select id="amountID" name="amount">
+                                    <option value="Below 30,000">Below 30,000</option>
+                                    <option value="30,000 to 60,000">30,000 to 60,000</option>
+                                    <option value="60,000 and above">60,000 and above</option>
+                                </select>
+                                <br>
+                                <br>
+                                <input type="submit" id="submitBtn" class="para-button" onclick='transfer.js'>
+                                <script type="text/javascript" src="./js/transfer.js"></script>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ  -->
+            <div id="faq-container">
+                <div id="faq-container-inner">
+                    bla bla
+                </div>
+            </div>
+
+            <!-- Call to action  -->
+            <div id="cta-container">
+                <div id="cta-container-inner">
+                    <button>lol</button>
+                    <button>lol2</button>
+                </div>
+            </div>
+
         </div>
-        <div>
-            <form action="forms.html">
-                <label for="loan">Select the type of loan: &emsp13;</label>
-                <select id="loanType" select name="type_of_loan">
-                    <option value="Personal Loan">Personal Loan</option>
-                    <option value="Business Loan">Business Loan</option>
-                    <option value="Foreigner Loan">Foreigner Loan</option>
-                    <option value="Education Loan">Education Loan</option>
-                    <option value="Medical Loan">Medical Loan</option>
-                    <option value="Wedding Loan">Wedding Loan</option>
-                    <option value="Vacation Loan">Vacation Loan</option>
-                    <option value="Renovation Packages">Renovation Packages</option>
-                    <option value="Payday Loan">Payday Loan</option>
-                </select>
-                <br>
-                <label for="amount">Select an amount: &emsp13;</label>
-                <select id="amountID" name="amount">
-                    <option value="Below 30,000">Below 30,000</option>
-                    <option value="30,000 to 60,000">30,000 to 60,000</option>
-                    <option value="60,000 and above">60,000 and above</option>
-                </select>
-                <br>
-                <input type="submit" id="submitBtn" class="para-button" onclick='transfer.js'>
-                <script type="text/javascript" src="./js/transfer.js"></script>
-            </form>
-        </div>
+
     </div>
 
     <footer id="footer">

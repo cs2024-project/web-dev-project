@@ -2,6 +2,7 @@
             width: 80%;
             height: 100px;
             margin: 0 auto;
+            padding-top: 20px;
         }
 
         body {
@@ -33,7 +34,7 @@
         }
 
         .carousel .carousel-item {
-            height: 520px;
+            height: 525px;
         }
 
         .carousel-item img {
@@ -49,13 +50,14 @@
             margin: 0 auto;
             vertical-align: middle;
             text-align: center;
+            padding-bottom: 10px;
         }
 
         #why-us-container-inner {
             /* to provide the side margin */
             margin: 0 auto;
-            width: 80%;
-            border: solid 1px #3b3747;
+            width: 75%;
+            /* border: solid 1px #3b3747; */
         }
 
         #why-us-content-row {
@@ -76,6 +78,52 @@
             height: 100%;
             display: block;
             padding: 50px 0;
+        }
+
+        #loan-types-container {
+            background-color: #f0f5f5;
+            margin: 0 auto;
+            vertical-align: middle;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+
+        #loan-types-container-inner {
+            margin: 0 auto;
+            padding: 30px 0;
+            width: 75%;
+            /* border: solid 1px #3b3747; */
+            display: inline-flex;
+        }
+
+        #faq-container {
+            background-color: #D8DCDC;
+            margin: 0 auto;
+            vertical-align: middle;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #faq-container-inner {
+            margin: 0 auto;
+            width: 75%;
+            border: solid 1px #3b3747;
+        }
+
+        #cta-container {
+            background-color: #f0f5f5;
+            margin: 0 auto;
+            vertical-align: middle;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #cta-container-inner {
+            /* to provide the side margin */
+            margin: 0 auto;
+            width: 75%;
+            border: solid 1px #3b3747;
         }
 
         .navbar {
