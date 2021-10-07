@@ -30,12 +30,14 @@
             typeLoan = localStorage.getItem("typeofLoan");
             mthIncome = localStorage.getItem("mthIncome");
             loanAmt = localStorage.getItem("loanAmt");
+            code = localStorage.getItem("code");
             msg = localStorage.getItem("msg");
             document.getElementById("showName").innerHTML = appName;
             document.getElementById("showNumber").innerHTML = contact;
             document.getElementById("showLoan").innerHTML = typeLoan;
             document.getElementById("showIncome").innerHTML = mthIncome;
             document.getElementById("showAmount").innerHTML = loanAmt;
+            document.getElementById("code").innerHTML = code;
             document.getElementById("showMsg").innerHTML = msg;
             localStorage.clear();
 
@@ -44,7 +46,8 @@
     <div id="container">
         <nav id="header" class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
-                <img src="./assets/logo_resized.png" style="padding-bottom: 10px;" href="#">
+                <img src="./assets/logo_resized.png" style="padding-bottom: 10px;"
+                    onclick="window.location.href='index.html'">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -64,19 +67,19 @@
                                     Loans
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="personalLoan.html">Personal</a></li>
-                                    <li><a class="dropdown-item" href="#">Business</a></li>
-                                    <li><a class="dropdown-item" href="#">Foreigner</a></li>
-                                    <li><a class="dropdown-item" href="#">Education</a></li>
-                                    <li><a class="dropdown-item" href="#">Medical</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Personal</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Business</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Foreigner</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Education</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Medical</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Wedding</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Wedding</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Vacation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Vacation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Renovation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Renovation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Payday</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Payday</a>
                                     </li>
                                 </ul>
                             </li>
@@ -98,65 +101,75 @@
         </nav>
 
         <div id="content">
-            <h1 class="header-1" style="padding-bottom: 32px;"><center>Application Summary</center></h1>
+            <h1 class="header-1" style="padding-bottom: 32px;">
+                <center>Application Summary</center>
+            </h1>
             <div style="padding-bottom: 50px;">
-            <table style="margin: 0 auto;" width="30%;" >
-                <tr>
-                    <td>
-                        <center><strong style=" position: relative;" class=" header-1-caption">Your application
-                                has
-                                been received.
-                                Thank you!<br>
-                                We will contact with you within 3 working days. <br></strong></center>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px; padding-top: 10px;">
-                        <u>Your Application Details:</u>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px;">
-                        Name:
-                        <div style="float:right;width:88%;" id="showName"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px;">
-                        Contact Number:
-                        <div style="float:right;width:70%;" id="showNumber"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px;">
-                        Type of loan:
-                        <div style="float:right;width:77%;" id="showLoan"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px;">
-                        Monthly Income:
-                        <div style="float:right;width:70%;" id="showIncome"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px;">
-                        Loan Amount:
-                        <div style="float:right;width:75%;" id="showAmount"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 50px;">
-                        Messages:
-                        <div style="float:right;width:80%;" id="showMsg"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="right" ;style="padding-bottom: 10px;">
-                        <input type="submit" value="Done" ; class="para-button" onclick="location.href = 'index.html';">
-                    </td>
-                </tr>
-            </table>
+                <table style="margin: 0 auto;" width="30%;" height="600%;">
+                    <tr>
+                        <td>
+                            <center><strong style=" position: relative;display: inline-flex;white-space: nowrap;"
+                                    class=" header-1-caption">Your application
+                                    has
+                                    been received.
+                                    Thank you!<br>
+                                    We will contact with you within 3 working days. <br></strong></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px; padding-top: 10px;">
+                            <u>Your Application Details:</u>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;">
+                            Name:&ensp;
+                            <div style="float:right;width:88%;clear: both;" id="showName"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
+                            Contact Number:&ensp;
+                            <div style="float:right;width:70%;" id="showNumber"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
+                            Type of loan:&ensp;
+                            <div style="float:right;width:77%;" id="showLoan"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
+                            Monthly Income:&ensp;
+                            <div style="float:right;width:70%;" id="showIncome"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
+                            Loan Amount:&ensp;
+                            <div style="float:right;width:75%;" id="showAmount"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
+                            Referral Code:&ensp;
+                            <div style="float:right;width:75%;" id="code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 50px;display: inline-flex;white-space: nowrap;">
+                            Messages:&ensp;
+                            <div style="float:right;width:80%;" id="showMsg"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" ;style="padding-bottom: 10px;">
+                            <input type="submit" value="Done" ; class="para-button"
+                                onclick="location.href = 'index.html';">
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
 
