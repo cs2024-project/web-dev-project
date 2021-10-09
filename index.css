@@ -150,12 +150,14 @@
             font-size: 56px;
             font-weight: 700;
             line-height: 67px;
+            text-align: center;
         }
 
         .header-1-caption {
             font-size: 18px;
             font-weight: 300;
             line-height: 27px;
+            text-align: center;
         }
 
         .header-2 {

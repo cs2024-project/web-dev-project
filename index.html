@@ -34,7 +34,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div style="float: right; margin-top: 5px;">
+                <div style="float: right;  margin-top: 5px;">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="clear: both;">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -47,19 +47,19 @@
                                     Loans
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="personalLoan.html">Personal</a></li>
-                                    <li><a class="dropdown-item" href="#">Business</a></li>
-                                    <li><a class="dropdown-item" href="#">Foreigner</a></li>
-                                    <li><a class="dropdown-item" href="#">Education</a></li>
-                                    <li><a class="dropdown-item" href="#">Medical</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Personal</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Business</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Foreigner</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Education</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Medical</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Wedding</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Wedding</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Vacation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Vacation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Renovation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Renovation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Payday</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Payday</a>
                                     </li>
                                 </ul>
                             </li>
@@ -252,9 +252,11 @@
                         <div
                             style="border-radius: 20px; padding:30px;background: #d8dcdc; display:flex; flex-wrap: wrap; justify-content: center;">
                             <img src="assets/new logo.png" style="margin-bottom: 30px;">
-                            <form style="clear: both;" action="apply-now.html">
-                                <label for="loan">Select the type of loan: &emsp13;</label>
-                                <select id="loanType" select name="type_of_loan">
+                            <form
+                                style="clear: both;display: inline-flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;"
+                                action="apply-now.html">
+                                <label for="loan">Select the type of loan: </label>
+                                <select id="loanType" select name="type_of_loan" style="width: 200px;">
                                     <option value="Personal Loan">Personal Loan</option>
                                     <option value="Business Loan">Business Loan</option>
                                     <option value="Foreigner Loan">Foreigner Loan</option>
@@ -266,8 +268,8 @@
                                     <option value="Payday Loan">Payday Loan</option>
                                 </select>
                                 <br>
-                                <label for="amount">Select an amount: &emsp13;</label>
-                                <select id="amountID" name="amount">
+                                <label for="amount">Select an amount: </label>
+                                <select id="amountID" name="amount" style="width: 200px;">
                                     <option value="Below 30,000">Below 30,000</option>
                                     <option value="30,000 to 60,000">30,000 to 60,000</option>
                                     <option value="60,000 and above">60,000 and above</option>

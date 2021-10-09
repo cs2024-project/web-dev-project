@@ -65,19 +65,19 @@
                                     Loans
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="personalLoan.html">Personal</a></li>
-                                    <li><a class="dropdown-item" href="#">Business</a></li>
-                                    <li><a class="dropdown-item" href="#">Foreigner</a></li>
-                                    <li><a class="dropdown-item" href="#">Education</a></li>
-                                    <li><a class="dropdown-item" href="#">Medical</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Personal</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Business</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Foreigner</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Education</a></li>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Medical</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Wedding</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Wedding</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Vacation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Vacation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Renovation</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Renovation</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Payday</a>
+                                    <li><a class="dropdown-item" href="personal-loan.html">Payday</a>
                                     </li>
                                 </ul>
                             </li>
@@ -100,20 +100,28 @@
             </div>
         </nav>
 
-        <div id="content" style="padding: 20px;">
+        <div id="content" style="padding:20px 20px 50px 20px;">
             <center class="header-1">Apply for a loan</center>
-            <center class="header-1-caption" style="padding-bottom: 50px;"><br>Fill up the form and we will contact with you shortly
+            <center class="header-1-caption" style="padding-bottom: 50px;"><br>Fill up the form and we will contact with
+                you shortly
             </center>
             <center>
-                <div style="position:relative;width:800px;height:800px">
-                    <canvas id="myCanvas" width="700" height="800"
+                <div style="position:relative;width:800px;height:900px">
+                    <canvas id="myCanvas" width="700" height="900"
                         style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
                     <form action="confirmation.html">
-                        <input type="text" style="position:absolute;left:100px;top:80px;width:600px;" class="
-                            form-control" id="name" placeholder="Enter your Name (as per NRIC)*" required>
+                        <p style="position:absolute;left:69px;top:50px;width:300px;height:30px;">Enter your Name (as
+                            per
+                            NRIC)*:</p>
+                        <input type="text"
+                            style="position:absolute;left:100px;top:80px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676;"
+                            class="
+                            form-control" id="name" required>
+                        <p style="position:absolute;left:102px;top: 130px;width:300px;height: 30px;">Enter your Contact
+                            Number (91234567)*:</p>
                         <input type="tel" style="position:absolute;left:100px;top:160px;width:600px;" id="contactno"
-                            placeholder="Enter your Contact Number (91234567)*" pattern="[6,8,9]{1}[0-9]{7}" required>
-                        <p style="position:absolute;left:0px;top:210px;width:300px;height: 30px;">Type of Loan:</p>
+                            pattern="[6,8,9]{1}[0-9]{7}" required>
+                        <p style="position:absolute;top:210px;width:300px;height: 30px;">Type of Loan:</p>
                         <select id="loanId" name="loan"
                             style="position:absolute;left:100px;top:240px;width:600px;height: 30px;">
                             <option value="Personal Loan">Personal Loan</option>
@@ -126,20 +134,30 @@
                             <option value="Renovation Packages">Renovation Packages</option>
                             <option value="Payday Loan">Payday Loan</option>
                         </select>
+                        <p style="position:absolute;left:55px;top:290px;width:300px;height: 30px;">Enter your Monthly
+                            Income*:</p>
                         <input type="number" style="position:absolute;left:100px;top:320px;width:600px;" id="income"
-                            placeholder="Enter your Monthly Income*" required>
-                        <p style="position:absolute;left:0px;top: 370px;width:300px;height: 30px;">Loan Amount:</p>
+                            required>
+                        <p style="position:absolute;left:3px;top: 370px;width:300px;height: 30px;">Loan Amount:</p>
                         <select id="loanamount" name="amount"
                             style="position:absolute;left:100px;top:400px;width:600px;height: 30px;">
                             <option value="Below 30,000">Below 30,000</option>
                             <option value="30,000 to 60,000">30,000 to 60,000</option>
                             <option value="60,000 and above">60,000 and above</option>
                         </select>
+                        <p style="position:absolute;left:83px;top:450px;width:300px;height: 30px;">Enter your Referral
+                            Code (JET0021):</p>
+                        <input type="text"
+                            style="position:absolute;left:100px;top:480px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676"
+                            class="
+                            form-control" id="referralcode">
+                        <p style="position:absolute;left:32px;top:530px;width:300px;height: 30px;">Enter your Messages :
+                        </p>
                         <textarea class="form-control"
-                            style="position:absolute;left:100px;top:480px;width:600px;height: 150px;"
-                            placeholder="Enter your Messages" id="txtbox" rows="3"></textarea>
+                            style="position:absolute;left:100px;top:560px;width:600px;height: 150px;padding: 1px 2px 1px 2px; border-color: #767676"
+                            id="txtbox" rows="3"></textarea>
                         <br>
-                        <input type="submit" style="position:absolute;left:300px;top:650px;width:200px;"
+                        <input type="submit" style="position:absolute;left:300px;top:730px;width:200px;"
                             class="para-button" id="submitBtn1" onclick='applicationDetails.js'>
                         <script type="text/javascript" src="./js/applicationDetails.js"></script>
                     </form>
