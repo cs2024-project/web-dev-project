@@ -9,13 +9,18 @@
 
     <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS (NODE_MODULES) -->
     <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap CSS (USING CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap" rel="stylesheet">
     <!-- endbuild -->
 
@@ -110,18 +115,20 @@
                     <canvas id="myCanvas" width="700" height="900"
                         style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
                     <form action="confirmation.html">
-                        <p style="position:absolute;left:69px;top:50px;width:300px;height:30px;">Enter your Name (as
-                            per
-                            NRIC)*:</p>
+                        <p class="required-field" style="position:absolute;left:71px;top:50px;width:300px;height:30px;">
+                            Enter your Name (as per NRIC)
+                        </p>
                         <input type="text"
                             style="position:absolute;left:100px;top:80px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676;"
                             class="
                             form-control" id="name" required>
-                        <p style="position:absolute;left:102px;top: 130px;width:300px;height: 30px;">Enter your Contact
-                            Number (91234567)*:</p>
+                        <p class="required-field"
+                            style="position:absolute;left:67px;top: 130px;width:400px;height: 30px;">Enter your Contact
+                            Number (eg. 91234567)
+                        </p>
                         <input type="tel" style="position:absolute;left:100px;top:160px;width:600px;" id="contactno"
                             pattern="[6,8,9]{1}[0-9]{7}" required>
-                        <p style="position:absolute;top:210px;width:300px;height: 30px;">Type of Loan:</p>
+                        <p style="position:absolute;left:1px; top:210px;width:300px;height: 30px;">Type of Loan</p>
                         <select id="loanId" name="loan"
                             style="position:absolute;left:100px;top:240px;width:600px;height: 30px;">
                             <option value="Personal Loan">Personal Loan</option>
@@ -134,24 +141,26 @@
                             <option value="Renovation Packages">Renovation Packages</option>
                             <option value="Payday Loan">Payday Loan</option>
                         </select>
-                        <p style="position:absolute;left:55px;top:290px;width:300px;height: 30px;">Enter your Monthly
-                            Income*:</p>
+                        <p class="required-field"
+                            style="position:absolute;left:59px;top:290px;width:300px;height: 30px;">Enter your Monthly
+                            Income
+                        </p>
                         <input type="number" style="position:absolute;left:100px;top:320px;width:600px;" id="income"
                             required>
-                        <p style="position:absolute;left:3px;top: 370px;width:300px;height: 30px;">Loan Amount:</p>
+                        <p style="position:absolute;left:5px;top: 370px;width:300px;height: 30px;">Loan Amount</p>
                         <select id="loanamount" name="amount"
                             style="position:absolute;left:100px;top:400px;width:600px;height: 30px;">
                             <option value="Below 30,000">Below 30,000</option>
                             <option value="30,000 to 60,000">30,000 to 60,000</option>
                             <option value="60,000 and above">60,000 and above</option>
                         </select>
-                        <p style="position:absolute;left:83px;top:450px;width:300px;height: 30px;">Enter your Referral
-                            Code (JET0021):</p>
+                        <p style="position:absolute;left:97px;top:450px;width:300px;height: 30px;">Enter your Referral
+                            Code (eg. JET0021)</p>
                         <input type="text"
                             style="position:absolute;left:100px;top:480px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676"
                             class="
                             form-control" id="referralcode">
-                        <p style="position:absolute;left:32px;top:530px;width:300px;height: 30px;">Enter your Messages :
+                        <p style="position:absolute;left:30px;top:530px;width:300px;height: 30px;">Enter your Messages
                         </p>
                         <textarea class="form-control"
                             style="position:absolute;left:100px;top:560px;width:600px;height: 150px;padding: 1px 2px 1px 2px; border-color: #767676"
@@ -173,11 +182,15 @@
         </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+    <!-- USING CDN INSTEAD OF NODE_MODULES -->
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <!-- endbuild -->
 </body>
 
