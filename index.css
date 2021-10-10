@@ -33,6 +33,11 @@
             padding: 20px 10%;
         }
 
+        .carousel-inner {
+            background-color: #D8DCDC;
+        }
+
+
         .carousel .carousel-item {
             height: 525px;
         }
