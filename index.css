@@ -131,6 +131,14 @@
             /* border: solid 1px #3b3747; */
         }
 
+        #vision-container {
+            margin: 0 auto;
+            text-align: top;
+            padding: 50px;
+            width: 80%;
+            vertical-align: middle;
+        }
+
         .navbar {
             font-size: 16px;
             font-weight: 700;
