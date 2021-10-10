@@ -305,3 +305,8 @@
         .modal-content {
             background-color: #D8DCDC;
         }
+
+        .required-field::after {
+            content: "*";
+            color: red;
+        }
