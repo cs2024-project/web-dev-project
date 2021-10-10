@@ -165,7 +165,7 @@
                                     Don't miss our
                                     exclusive promotions!
                                     <div
-                                        style="color:#d8dcdc; font-size: 60px; line-height: 60px; margin-top: 30px; margin-bottom: 30px;">
+                                        style="color:#d8dcdc; font-size: 60px; line-height: 60px; margin-top: 30px; margin-bottom: 30px; text-shadow: 3px 3px 1px dimgray;">
                                         0%<br>INTEREST
                                         RATE<br></div> as a
                                     welcome to our
@@ -468,7 +468,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> type="button"
+                    </div>
 
                 </div>
 
@@ -476,18 +476,13 @@
 
                 <!-- Call to action  -->
                 <div id="cta-container">
-                    <div id="cta-con                                tainer-inner">
+                    <div id="cta-container-inner">
 
-                        <img src="assets                                /logo.png">
-
-
-                        <div style="display:                                flex; justify-content:center; margin: 30p
-                                                                     x       0;">
-                            <button class="p   ara-button" style="background-color:#d8dcdc; color:#258985"
-                                onclick="win dow.location.href='./contact-us.html'">CONTACT
-                                US</button>
-
-                            &nbsp; &nbsp ;
+                        <img src="assets/logo.png">
+                        <div style="display: flex; justify-content:center; margin: 30px;">
+                            <button class="para-button" style="background-color:#d8dcdc; color:#258985"
+                                onclick="window.location.href='./contact-us.html'">CONTACT US</button>
+                            &nbsp; &nbsp;
                             <button class="para-button" onclick="window.location.href='./apply-now.html'">APPLY
                                 NOW</button>
                         </div>
@@ -511,6 +506,12 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        var showModal = new bootstrap.Modal(document.getElementById('promoModal'), {})
+        setTimeout(function () {
+            showModal.show()
+        }, 1000);
+    </script>
     <!-- endbuild -->
 </body>
 
