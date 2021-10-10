@@ -189,18 +189,19 @@
             background-color: #852529;
             color: #f0f5f5;
             border: none;
-            border-radius: 15px;
+            border-radius: 5px;
             font-size: 12px;
             font-weight: 700;
             line-height: 18px;
-            padding: 7px 18px 5px 18px;
+            padding: 10px 18px 5px 18px;
+            transform: translateY(-2px);
         }
 
         .para-button {
             background-color: #852529;
             color: #f0f5f5;
             border: none;
-            border-radius: 15px;
+            border-radius: 8px;
             font-size: 16px;
             font-weight: 700;
             line-height: 24px;
@@ -239,14 +240,66 @@
 
         .accordion-button:not(.collapsed) {
             background-color: #3b3747;
-            color: #258985;
+            color: #7ebebc;
         }
 
         .accordion-button:not(.collapsed)::after {
             background-color: #3b3747;
-            color: #258985;
+            color: #7ebebc;
         }
 
         .accordion-body {
             text-align: left;
+        }
+
+        .carousel-caption-override {
+            position: absolute;
+            left: unset;
+            right: 10%;
+            bottom: 35%;
+            color: #3B3747;
+            /* background-color: rgba(37, 137, 133, 0.6); */
+            /* padding: 20px;
+            border-radius: 10px; */
+        }
+
+        .carousel-caption-text {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        .carousel-caption-button {
+
+            background-color: transparent;
+
+            /* color: #3B3747;
+            border-color: #3B3747; */
+            /* color: #258985;
+            border-color: #258985;
+            border: solid;
+            border-radius: 5px;
+            border-width: 4px; */
+
+            background-color: rgba(133, 37, 41);
+            color: #f0f5f5;
+
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 12px 30px 8px 30px;
+
+            margin-top: 20px;
+            /* text-shadow: 1px 1px grey; */
+            box-shadow: 3px 3px 3px grey;
+
+            /* 
+                        background-color: #852529;
+                        color: #f0f5f5;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        padding: 10px 70px 10px 70px; */
         }
