@@ -1,6 +1,6 @@
 # CS2024 Web Development Team Project
 
-Greetings! This repository exists to archive and document the school project for building an Money-Lending Service Web Portal. 
+Greetings! This repository exists to archive and document the school project for building a Money-Lending Service Web Portal. 
 
 This project is for educational purposes and non-commercial usage only; it is not hosted online other than on this repository.
 
